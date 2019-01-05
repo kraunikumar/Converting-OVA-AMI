@@ -41,5 +41,7 @@ Change in role-policy
  
 **4.   Checking the status of AMI**
 
-        aws ec2 describe-import-image-tasks --import-task-ids import-ami-abcd1234
-        Wait till the status is completed.
+        - aws ec2 describe-import-image-tasks --import-task-ids import-ami-abcd1234
+         
+Wait till the states changes to completed from Converting
+         
