@@ -14,7 +14,7 @@ Choose Create Bucket.
 2.Access and security
 
 Change in container.json
-     >"S3Bucket": "< your s3 bucket name",
+     > "S3Bucket": "< your s3 bucket name",
      >   "S3Key": "location-in-your-bucket/my-windows-2008-vm.ova"
         
 Change in role-policy
@@ -23,7 +23,7 @@ Change in role-policy
       >     "arn:aws:s3:::<bucket-name >",
       >      "arn:aws:s3:::<bucket-name >/*"
       >   ]
-      >},
+      > },
       
       
 3. 
