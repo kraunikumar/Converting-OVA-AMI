@@ -1,8 +1,8 @@
 # Don't touch trust policy file
 
-1.Create S3 bucket
+1.**Create S3 bucket**
 
-To create an S3 bucket
+**To create an S3 bucket**
 Open the Amazon S3 console at https://console.aws.amazon.com/s3/.
 Choose Create Bucket.
   In the Create a Bucket dialog box, do the following:
