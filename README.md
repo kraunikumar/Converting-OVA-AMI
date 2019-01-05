@@ -3,7 +3,7 @@
 
 1.**Create S3 bucket**
 
-**To create an S3 bucket**
+  **To create an S3 bucket**
 Open the Amazon S3 console at https://console.aws.amazon.com/s3/.
 Choose Create Bucket.
   In the Create a Bucket dialog box, do the following:
@@ -14,16 +14,16 @@ Choose Create Bucket.
 2.Access and security
 
 Change in container.json
-     "S3Bucket": "< your s3 bucket name",
-        "S3Key": "location-in-your-bucket/my-windows-2008-vm.ova"
+     >"S3Bucket": "< your s3 bucket name",
+     >   "S3Key": "location-in-your-bucket/my-windows-2008-vm.ova"
         
 Change in role-policy
 
-           "Resource":[
-            "arn:aws:s3:::<bucket-name >",
-            "arn:aws:s3:::<bucket-name >/*"
-         ]
-      },
+      >     "Resource":[
+      >     "arn:aws:s3:::<bucket-name >",
+      >      "arn:aws:s3:::<bucket-name >/*"
+      >   ]
+      >},
       
       
 3. 
