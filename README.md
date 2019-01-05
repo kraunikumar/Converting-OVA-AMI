@@ -1,7 +1,8 @@
 ### **IMPORTING OVA-to-AMI**
 -------------------------
 [Refference!](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html#import-vm-image)
-1.**Create S3 bucket**
+
+**1**. **Create S3 bucket**
 
   **To create an S3 bucket**
 Open the Amazon S3 console at https://console.aws.amazon.com/s3/.
@@ -11,7 +12,7 @@ Choose Create Bucket.
   - For Region, select the region that you want for your AMI.
   - Choose Create.
 
-2.Access and security
+**2.  Access and security**
 
 Change in container.json
 
