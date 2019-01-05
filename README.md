@@ -24,7 +24,7 @@ Change in role-policy
  Command : 
         aws iam create-role --role-name vmimport --assume-role-policy-document file://trust-policy.json
       
-** 3.   Converting to AMI **
+**3.   Converting to AMI**
   
   Change in container.json
 
@@ -39,7 +39,7 @@ Change in role-policy
         Linux 
         - aws ec2 import-image --description "Centos7 OVA" --disk-containers file://containers.json
  
-** 4.   Checking the status of AMI   **
+**4.   Checking the status of AMI**
 
         aws ec2 describe-import-image-tasks --import-task-ids import-ami-abcd1234
         Wait till the status is completed.
