@@ -1,0 +1,9 @@
+[
+  {
+    "Description": "Kubernetes-Master OVA",
+    "Format": "ova",
+    "UserBucket": {
+        "S3Bucket": "oasislegalhold",
+        "S3Key": "kube-node1.ova"
+    }
+}]
