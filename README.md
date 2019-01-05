@@ -34,10 +34,10 @@ Change in role-policy
   Make sure you have copied the OVA file to S3 and completed the location in the above step. 
   
   Command :
-             Windows
-             - aws ec2 import-image --description "Windows 2008 OVA" --license-type <value> --disk-containers file://containers.json
-             Linux 
-             - aws ec2 import-image --description "Centos7 OVA" --disk-containers file://containers.json
+        Windows
+        - aws ec2 import-image --description "Windows 2008 OVA" --license-type <value> --disk-containers file://containers.json
+        Linux 
+        - aws ec2 import-image --description "Centos7 OVA" --disk-containers file://containers.json
  
 **4.   Checking the status of AMI   **
 
