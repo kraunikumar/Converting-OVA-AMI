@@ -33,7 +33,7 @@ Change in role-policy
         
   Make sure you have copied the OVA file to S3 and completed the location in the above step. 
   
-  Command :
+        Command :
         Windows
         - aws ec2 import-image --description "Windows 2008 OVA" --license-type <value> --disk-containers file://containers.json
         Linux 
