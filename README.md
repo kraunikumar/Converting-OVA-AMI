@@ -13,11 +13,6 @@ Choose Create Bucket.
   - Choose Create.
 
 **2.  Access and security**
-
-Change in container.json
-
-      "S3Bucket": "< your s3 bucket name",
-        "S3Key": "location-in-your-bucket/my-windows-2008-vm.ova"
         
 Change in role-policy
 
@@ -25,5 +20,26 @@ Change in role-policy
            "arn:aws:s3:::<bucket-name >",
             "arn:aws:s3:::<bucket-name >/*"
          ]
-       }      
-3. 
+       }    
+ Command : 
+        aws iam create-role --role-name vmimport --assume-role-policy-document file://trust-policy.json
+      
+**3.   Converting to AMI **
+  
+  Change in container.json
+
+      "S3Bucket": "< your s3 bucket name>",
+        "S3Key": "location-in-your-bucket/my-windows-2008-vm.ova"
+        
+  Make sure you have copied the OVA file to S3 and completed the location in the above step. 
+  
+  Command :
+             Windows
+             - aws ec2 import-image --description "Windows 2008 OVA" --license-type <value> --disk-containers file://containers.json
+             Linux 
+             - aws ec2 import-image --description "Centos7 OVA" --disk-containers file://containers.json
+ 
+**4.   Checking the status of AMI   **
+
+        aws ec2 describe-import-image-tasks --import-task-ids import-ami-abcd1234
+        Wait till the status is completed.
